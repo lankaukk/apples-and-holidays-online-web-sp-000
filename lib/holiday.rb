@@ -54,6 +54,7 @@ holiday_hash.each do |season, data|
 end
 
 def all_holidays_with_bbq(holiday_hash)
+<<<<<<< HEAD
   bbq_holidays = []
   holiday_hash.each do |season, holiday_and_supplies|
     holiday_and_supplies.each do |holiday, supply|
@@ -63,4 +64,14 @@ def all_holidays_with_bbq(holiday_hash)
     end
   end 
   return bbq_holidays
+=======
+  holiday_hash.each do |season, holiday_and_supplies|
+    holiday_and_supplies.each do |holiday, supply|
+      binding.pry
+      if supply.include? "BBQ"
+        puts "#{holiday}"
+      end
+    end
+  end 
+>>>>>>> 09f357dccf03ee6337cc60d3bb53f5a22527c89d
 end
